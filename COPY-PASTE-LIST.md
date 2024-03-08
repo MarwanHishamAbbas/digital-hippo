@@ -7,6 +7,7 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 ## Copy & Paste List to follow along with the video (annoying stuff we don't wanna type out ourselves)
 
 ### Logo SVG
+
 ```
 <svg viewBox="0 0 512 512">
     <g>
@@ -94,6 +95,7 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 ```
 
 ### useOnClickOutside Hook
+
 ```
 import { RefObject, useEffect } from "react";
 
@@ -125,6 +127,7 @@ export const useOnClickOutside = <T extends HTMLElement = HTMLElement>(
 ```
 
 ### Breadcrumbs Icon
+
 ```
 <svg
     viewBox='0 0 20 20'
@@ -228,6 +231,7 @@ return res.status(200).send()
 ```
 
 ### Receipt Email Body
+
 ```
 <Html>
     <Head />
@@ -359,6 +363,7 @@ return res.status(200).send()
 ```
 
 ### Receipt Email Styles
+
 ```
 const main = {
   fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
@@ -519,6 +524,7 @@ const footerCopyright = {
 ```
 
 ### Package.json deployment commands
+
 ```
 "build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
 "build:server": "tsc --project tsconfig.server.json",
@@ -529,6 +535,7 @@ const footerCopyright = {
 ```
 
 ### Primary Action Email Body
+
 ```
 <Html>
 <Head />
@@ -567,6 +574,7 @@ const footerCopyright = {
 ```
 
 ### Primary Action Email Styles
+
 ```
 const main = {
   backgroundColor: "#ffffff",
@@ -615,6 +623,7 @@ const footer = {
 ```
 
 ### Customizing our metadata
+
 ```
 export function constructMetadata({
   title = 'DigitalHippo - the marketplace for digital assets',
@@ -649,7 +658,7 @@ export function constructMetadata({
       creator: '@joshtriedcoding',
     },
     icons,
-    metadataBase: new URL('https://digitalhippo.up.railway.app'),
+    metadataBase: new URL('digital-hippo-sable.vercel.app'),
     ...(noIndex && {
       robots: {
         index: false,
