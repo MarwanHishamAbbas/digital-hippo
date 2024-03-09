@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "https://digital-hippo-nine.vercel.app",
+        hostname: "digital-hippo-nine.vercel.app",
       },
     ],
   },
