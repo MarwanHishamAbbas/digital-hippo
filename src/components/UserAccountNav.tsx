@@ -13,7 +13,7 @@ import Link from "next/link"
 import { useAuth } from "@/hooks/use-auth"
 
 const UserAccountNav = ({ user }: { user: User }) => {
-  // const { signOut } = useAuth()
+  const { signOut } = useAuth()
 
   return (
     <DropdownMenu>
@@ -36,10 +36,7 @@ const UserAccountNav = ({ user }: { user: User }) => {
           <Link href="/sell">Seller Dashboard</Link>
         </DropdownMenuItem>
 
-        <DropdownMenuItem
-          // onClick={signOut}
-          className="cursor-pointer"
-        >
+        <DropdownMenuItem onClick={signOut} className="cursor-pointer">
           Log out
         </DropdownMenuItem>
       </DropdownMenuContent>
