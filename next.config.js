@@ -4,11 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "http",
-        hostname: "digital-hippo-htj9-psi.vercel.app",
+        hostname: "digital-hippo-nine.vercel.app",
       },
       {
         protocol: "https",
-        hostname: "digital-hippo-htj9-psi.vercel.app",
+        hostname: "https://digital-hippo-nine.vercel.app",
       },
     ],
   },

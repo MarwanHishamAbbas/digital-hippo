@@ -58,7 +58,7 @@ export function constructMetadata({
       creator: "@joshtriedcoding",
     },
     icons,
-    metadataBase: new URL("https://digital-hippo-sable.vercel.app"),
+    metadataBase: new URL("https://digital-hippo-nine.vercel.app/"),
     ...(noIndex && {
       robots: {
         index: false,
