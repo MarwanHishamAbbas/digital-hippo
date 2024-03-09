@@ -47,18 +47,18 @@ const start = async () => {
   //   },
   // })
 
-  if (process.env.NEXT_BUILD) {
-    app.listen(PORT, async () => {
-      // payload.logger.info("Next.js is building for production")
+  // if (process.env.NEXT_BUILD) {
+  //   app.listen(PORT, async () => {
+  //     // payload.logger.info("Next.js is building for production")
 
-      // @ts-expect-error
-      await nextBuild(path.join(__dirname, "../"))
+  //     // @ts-expect-error
+  //     await nextBuild(path.join(__dirname, "../"))
 
-      process.exit()
-    })
+  //     process.exit()
+  //   })
 
-    return
-  }
+  //   return
+  // }
 
   const cartRouter = express.Router()
 
@@ -84,7 +84,7 @@ const start = async () => {
     })
   )
 
-  app.use((req, res) => nextHandler(req, res))
+  // app.use((req, res) => nextHandler(req, res))
 
   // nextApp.prepare().then(() => {
   //   payload.logger.info("Next.js started")
