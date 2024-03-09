@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "http",
-        hostname: "digital-hippo-nine.vercel.app",
+        hostname: "localhost",
       },
       {
         protocol: "https",
